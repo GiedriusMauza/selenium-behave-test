@@ -1,0 +1,13 @@
+{
+  "url": "https://www.google.com",
+  "browser": "chrome",
+  "driver_timeout": "5",
+  "password": "123_",
+  "wait_time": "4",
+  "jira_server": "https://jira.atlassian.net",
+  "jira_user": "",
+  "jira_password": "",
+   "update_jira": false,
+   "proxy": "",
+   "use_proxy": false
+}
