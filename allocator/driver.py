@@ -24,6 +24,7 @@ class Driver(object):
             #   chromedriver_autoinstaller.install()
             chrome_options = webdriver.ChromeOptions()
             prefs = {"profile.default_content_setting_values.notifications": 2}
+            chrome_options.binary_location=os.getcwd() + "/library/chromedriver"
             chrome_options.add_argument('--ignore-certificate-errors')
             chrome_options.add_argument('--ignore-ssl-errors')
             chrome_options.add_argument('--headless')
