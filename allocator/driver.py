@@ -23,14 +23,14 @@ class Driver(object):
         if settings.browser == "chrome":
             #   chromedriver_autoinstaller.install()
             chrome_options = webdriver.ChromeOptions()
-            prefs = {"profile.default_content_setting_values.notifications": 2}
+            #prefs = {"profile.default_content_setting_values.notifications": 2}
             chrome_options.binary_location=os.getcwd() + "/library/chromedriver"
-            chrome_options.add_argument('--ignore-certificate-errors')
-            chrome_options.add_argument('--ignore-ssl-errors')
+            #chrome_options.add_argument('--ignore-certificate-errors')
+            #chrome_options.add_argument('--ignore-ssl-errors')
             chrome_options.add_argument('--headless')
-            chrome_options.add_experimental_option("prefs", prefs)
-            PROXY = settings.proxy
-            chrome_options.add_argument('--proxy-server=%s' % PROXY)
+            #chrome_options.add_experimental_option("prefs", prefs)
+            #PROXY = settings.proxy
+            #chrome_options.add_argument('--proxy-server=%s' % PROXY)
             self.driver = webdriver.Chrome(executable_path=os.getcwd() + "/library/chromedriver",
                                            chrome_options=chrome_options)
             # self.driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
