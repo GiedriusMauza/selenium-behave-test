@@ -26,6 +26,7 @@ class Driver(object):
             prefs = {"profile.default_content_setting_values.notifications": 2}
             chrome_options.add_argument('--ignore-certificate-errors')
             chrome_options.add_argument('--ignore-ssl-errors')
+            chrome_options.add_argument('--headless')
             chrome_options.add_experimental_option("prefs", prefs)
             PROXY = settings.proxy
             chrome_options.add_argument('--proxy-server=%s' % PROXY)
