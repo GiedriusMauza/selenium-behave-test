@@ -30,7 +30,7 @@ class Driver(object):
             chrome_options.add_experimental_option("prefs", prefs)
             PROXY = settings.proxy
             chrome_options.add_argument('--proxy-server=%s' % PROXY)
-            self.driver = webdriver.Chrome(executable_path=os.getcwd() + "/library/chromedriver.exe",
+            self.driver = webdriver.Chrome(executable_path=os.getcwd() + "/library/chromedriver",
                                            chrome_options=chrome_options)
             # self.driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
             # driver_logs = driver.get_log("driver")
